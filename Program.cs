@@ -14,18 +14,18 @@ class Program
 
         if (choix == 1)
         {
-            Console.WriteLine(">Entrez une température en degrés Celsius, sans préciser l'unité ( ex = 19,5) : ");
-            int temp = Convert.ToInt32(Console.ReadLine());
-            temp = (temp * (9/5) ) + 32;
+            Console.Write(">Entrez une température en degrés Celsius, sans préciser l'unité ( ex = 19,5) : "); 
+            float temp = Convert.ToSingle(Console.ReadLine());
+            temp = (temp * (9f/5f) ) + 32f;
             Console.WriteLine("Votre température vaut " + temp + " degrés Fahrenheit" );
         }
         else
         {
-            Console.WriteLine(">Entrez une température en degrés Fahrenheit, sans préciser l'unité ( ex = 19,5) : ");
-            int temp = Convert.ToInt32(Console.ReadLine());
-            temp = (temp - 32 ) * (5/9);
+            Console.Write(">Entrez une température en degrés Fahrenheit, sans préciser l'unité ( ex = 19,5) : ");
+            float temp = Convert.ToSingle(Console.ReadLine());
+            temp = (temp - 32f ) * (5f/9f);
             Console.WriteLine("Votre température vaut " + temp + " degrés Celsius" );
         }
-        Console.WriteLine("Merci d'avoir utilisé notre convertissuer");
+        Console.WriteLine("Merci d'avoir utilisé notre convertisseur");
     }
 }
