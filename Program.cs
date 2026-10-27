@@ -19,7 +19,7 @@ class Program
             temp = (temp * (9f/5f) ) + 32f;
             Console.WriteLine("Votre température vaut " + temp + " degrés Fahrenheit" );
         }
-        else
+        else if (choix ==2)
         {
             Console.Write(">Entrez une température en degrés Fahrenheit, sans préciser l'unité ( ex = 19,5) : ");
             float temp = Convert.ToSingle(Console.ReadLine());
